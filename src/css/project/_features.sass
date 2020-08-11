@@ -1,0 +1,51 @@
+.features
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-left: auto
+  margin-right: auto
+  max-width: 335px
+  margin-bottom: 15px
+
+  @media(min-width: 768px)
+    font-size: 24px
+    max-width: 920px
+
+  @media(min-width: 1000px)
+    margin-bottom: 35px
+
+  &__item
+    margin-top: 0
+    margin-bottom: 35px
+    padding-left: 30px
+    position: relative
+
+    @media(min-width: 768px)
+      margin-bottom: 45px
+      padding-left: 65px
+
+    span
+      color: $main_color
+      font-size: 14px
+      font-weight: 800
+      line-height: 1.2
+
+      @media(min-width: 768px)
+        font-size: 30px
+
+    &::before
+      background-image: url("data:image/svg+xml,%3Csvg width='39' height='49' viewBox='0 0 39 49' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38.8535 23.6291C38.7185 23.2902 38.4991 23.0155 38.2282 22.8465L2.01534 0.184275C1.3273 -0.246159 0.490718 0.103173 0.146897 0.964449C0.0501899 1.20663 -8.14813e-05 1.47374 1.28174e-07 1.74452V47.0691C-0.00032631 48.0319 0.622925 48.8127 1.39218 48.8132C1.60852 48.8133 1.82193 48.7504 2.01543 48.6293L38.2282 25.967C38.9167 25.5375 39.1966 24.4908 38.8535 23.6291Z' fill='%235E17EB'/%3E%3C/svg%3E")
+      background-size: 20px 24px
+      content: ''
+      height: 24px
+      left: 0
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 20px
+      z-index: 1
+
+      @media(min-width: 768px)
+        background-size: 39px 48px
+        height: 48px
+        width: 39px

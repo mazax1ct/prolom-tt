@@ -1,0 +1,148 @@
+.contacts
+  margin-bottom: 50px
+
+  @media(min-width: 1000px)
+    margin-bottom: 200px
+
+  h2
+    font-size: 14px
+    line-height: 1.2
+    margin-top: 0
+    margin-bottom: 30px
+    max-width: 255px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      font-size: 24px
+      max-width: 100%
+      margin-bottom: 90px
+
+.contact
+  max-width: 250px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 50px
+
+  @media(min-width: 768px)
+    align-items: center
+    display: flex
+    max-width: 920px
+
+  @media(min-width: 1000px)
+    margin-bottom: 100px
+
+  &--reverse
+    @media(min-width: 768px)
+      flex-direction: row-reverse
+
+    .contact__text
+      @media(min-width: 768px)
+        padding-right: 25px
+        padding-left: 40px
+
+    .contact__map
+      &::before
+        @media(min-width: 768px)
+          left: auto
+          right: 25px
+          transform: translate(50%, -50%)
+
+  &__text
+    background-color: $secondary_color
+    margin-bottom: 15px
+    padding: 20px 15px
+
+    @media(min-width: 768px)
+      font-size: 14px
+      flex-grow: 1
+      line-height: 20px
+      margin-bottom: 0
+      max-width: 410px
+      padding: 25px
+      padding-right: 40px
+
+    h3
+      font-size: 14px
+      font-weight: 400
+      margin-top: 0
+      margin-bottom: 15px
+      text-align: center
+
+      @media(min-width: 768px)
+        font-size: 24px
+        line-height: 30px
+
+  &__row
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+
+    p
+      margin-top: 0
+      margin-bottom: 0
+
+      &:not(:last-child)
+        margin-bottom: 5px
+
+    h4
+      margin-top: 0
+      margin-bottom: 10px
+
+      @media(min-width: 768px)
+        font-size: 16px
+
+  &__row-block
+    &:not(:last-child)
+      margin-bottom: 20px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+    @media(min-width: 768px)
+      max-width: 150px
+
+  &__row2
+    display: flex
+
+    @media(min-width: 768px)
+      display: block
+
+  &__row2-block
+    width: 50%
+
+    @media(min-width: 768px)
+      width: 100%
+
+    span
+      color: $main_color
+
+  &__map
+    border: 5px solid #000
+    background-color: #EFEFEF
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    display: block
+    height: 220px
+    position: relative
+
+    @media(min-width: 768px)
+      border-width: 10px
+      flex-grow: 1
+      height: 380px
+      min-width: 50%
+
+    &::before
+      @media(min-width: 768px)
+        background: url('../images/decor/bottle_2.png') no-repeat 0 0 / 100% auto  transparent
+        content: ''
+        height: 291px
+        left: 0
+        position: absolute
+        margin-left: -20px
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 161px
+        z-index: 1
